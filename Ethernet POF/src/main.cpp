@@ -1,12 +1,12 @@
 /*
-Ethernet proof of concept program based on the Arduino Webserver program. The ethernet breakout board should be based on the ENCJ60 and should be connected as followed:
+Ethernet proof of concept program based on the Arduino Webserver example. The ethernet breakout board should be based on the ENC28J60 and should be connected as followed:
 
 Pin 13 -> SCK
 Pin 12 -> SO/MISO
 Pin 11 -> SI/MOSI
 Pin 10 -> SS
 
-It seems that on some board it doesnt say SI. In that case it might say something like ST, which woulde be the SI pin. 
+In case there is no SI label on the breakout board, it might be labeled as ST. This happens om some cheap Chinese breakout boards.
 */
 
 #include <Arduino.h>
